@@ -2,10 +2,35 @@
 @tailwind components;
 @tailwind utilities;
 
-@import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap");
-
-@layer base {
-    html {
-        font-family: Work Sans, system-ui, sans-serif;
-    }
+/* Global styles */
+html {
+  background-color: white;
 }
+
+body {
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Dark mode specific styles */
+body.dark {
+  background-color: black;
+  color: white; /* Ensure text color is white in dark mode */
+}
+
+body.dark .text-gray-900 {
+  color: white; /* Ensure any text color class that is gray becomes white in dark mode */
+}
+
+body.dark .text-gray-500 {
+  color: lightgray; /* Adjust lighter text to ensure visibility */
+}
+
+/* Other dark mode adjustments */
+body.dark a {
+  color: white;
+}
+
+body.dark .bg-gray-100 {
+  background-color: #2d2d2d; /* Adjust background colors for dark mode */
+}
+

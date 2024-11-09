@@ -1,0 +1,50 @@
+/* App.css */
+
+html {
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  body {
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  .dark {
+    background-color: #121212;
+    color: #ffffff;
+  }
+  
+  .dark .text-gray-900 {
+    color: #ffffff;
+  }
+  
+  .dark .bg-white {
+    background-color: #1a1a1a;
+  }
+  
+  .dark .border-b {
+    border-color: #333;
+  }
+  
+  /* Default light theme styles */
+  body {
+    background-color: #f7fafc;
+    color: #1a202c;
+  }
+  
+  a {
+    color: #1a202c;
+  }
+  
+  button {
+    background-color: #e2e8f0;
+  }
+  
+  button:hover {
+    background-color: #cbd5e0;
+  }
+  
+  a:hover {
+    color: #2b6cb0;
+  }
+  
+  

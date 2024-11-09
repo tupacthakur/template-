@@ -1,28 +1,30 @@
+// src/components/Skills.jsx
 import React from 'react';
 
 const Skills = () => {
   const skills = [
     {
-      category: 'Languages',
-      items: ['HTML', 'CSS', 'JavaScript'],
+      category: 'Programming Languages',
+      items: ['Python', 'R', 'SQL'],
     },
     {
-      category: 'Frameworks',
-      items: ['Bootstrap', 'Tailwind CSS'],
+      category: 'Data Analysis & Visualization',
+      items: ['Pandas', 'NumPy', 'Matplotlib', 'Seaborn', 'Plotly'],
     },
     {
-      category: 'Library',
-      items: ['jQuery', 'ReactJS', 'Material UI'],
+      category: 'Machine Learning Frameworks',
+      items: ['scikit-learn', 'TensorFlow', 'Keras', 'PyTorch'],
     },
     {
-      category: 'Design',
-      items: ['Figma', 'Penpot', 'Adobe XD', 'Canva', 'Adobe Photoshop'],
+      category: 'Data Wrangling & Processing',
+      items: ['Apache Spark', 'Hadoop', 'Dask'],
     },
     {
-      category: 'Others',
-      items: ['WordPress', 'Git', 'Github', 'Bitbucket'],
+      category: 'Other Tools & Platforms',
+      items: ['Jupyter Notebook', 'Google Colab', 'Git', 'Docker', 'AWS'],
     },
   ];
+  
   return (
     <div className="flex flex-col items-start mt-20 space-y-5 md:mt-32 md:space-y-7 md:px-5 lg:mt-32">
       <h1 className="text-3xl font-bold">Skills</h1>
@@ -34,7 +36,7 @@ const Skills = () => {
           >
             <h2 className="text-2xl">{skill.category}</h2>
             <div className="flex">
-              <ul className="">
+              <ul>
                 {skill.items.map((item, index) => (
                   <li
                     key={index}
@@ -53,3 +55,4 @@ const Skills = () => {
 };
 
 export default Skills;
+
